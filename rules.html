@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url('background.jpg'); /* Ensure the background image is set */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center; /* Center the image */
+            background-size: cover; /* Ensure the image covers the entire viewport */
+            color: white; /* Set text color to white to ensure visibility */
+            font-weight: bold; /* Make the font bold across the entire page */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #b6f1ff; /* Purple color */
+            color: white;
+            padding: 15px 20px; /* Added padding for spacing */
+            display: flex; /* Use Flexbox */
+            align-items: center; /* Vertically center items */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10; /* Ensure the header is above the content */
+        }
+
+        /* Container for logo and nav buttons */
+        .header-container {
+            display: flex;
+            align-items: center; /* Align logo and buttons vertically */
+            margin-left: 0; /* Removed margin to bring content closer to the left */
+        }
+
+        /* Round logo styles */
+        .logo {
+            width: 50px; /* Set the width of the logo */
+            height: 50px; /* Set the height of the logo */
+            border-radius: 50%; /* Makes the logo round */
+            object-fit: cover; /* Ensures the image fills the circle properly without distortion */
+            margin-right: 15px; /* Adds space between the logo and the buttons */
+        }
+
+        /* Text next to the logo */
+        .logo-text {
+            font-size: 24px; /* Set the size of the text */
+            font-weight: bold; /* Make the text bold */
+            color: #fff; /* Text color white */
+            margin-right: 10px; /* Adds space between the text and the buttons */
+        }
+
+        .nav-button {
+            background-color: #8ce5fa; /* Button color */
+            color: white;
+            font-size: 18px;
+             padding: 10px 15px; /* Reduced padding to make the button smaller */
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-right: 10px; /* Adds space between buttons */
+        }
+
+        .nav-button:hover {
+            background-color: #84a8b0; /* Button hover color */
+        }
+
+        /* Content styles */
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin-top: 100px; /* Space for the fixed header */
+            text-align: center; /* Center-align text */
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #7289da;
+            color: white;
+            font-size: 18px;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #5b6eae;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 18px; /* Reduced text size */
+            margin-top: 20px; /* Adds spacing between the button and the text */
+        }
+
+        /* Info box styles */
+        .info-box {
+            background-color: rgba(255, 255, 255, 0.2); /* Reverted to semi-transparent white */
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 30px; /* Adds space between the button and the info box */
+            max-width: 600px;
+            text-align: center;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with logo, text, and nav buttons -->
+    <header>
+        <div class="header-container">
+            <!-- Add your logo here -->
+            <img src="LOGO.jpg" alt="Logo" class="logo"> <!-- Replace 'LOGO.jpg' with your actual logo file path -->
+            <!-- Text next to the logo -->
+            <span class="logo-text">Bea's Bee's</span>
+            <!-- Updated href to point to HomePage.html -->
+            <a href="home.html" class="nav-button">Home</a> <!-- Navigation Button -->
+            <!-- Add a second button next to the Home button -->
+            <a href="rules.html" class="nav-button">Rules</a> <!-- Second Navigation Button -->
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <div class="content">
+        <!-- The info-box (text box) goes below the button -->
+        <div class="info-box">
+            <p>1. Any acts of hate in this community will not be tolerated. And it will result in a permanent ban if you do so.</p> 
+            <p>2. Follow Discord’s guidelines & terms. That includes being over the age of (13 and older.)</p>
+            <p>3. Spreading someone’s personal information is not allowed, things like house address, full name, and any other personal things. We take this very seriously, and this is not a joke to us.</p> 
+            <p>4. No NSFW any profiles that contain nudity are not allowed. Same with sending pictures and videos of nudity in the server.</p>
+            <p>5. No Spamming this is not the place to play around and spam things. We try our best to keep this server fun and enjoyable for others.</p>
+            <p>6. Impersonation do not impersonate members of this server, and that includes the staff.</p>
+            <p>7. Raiding promoting or trying to have this server be raided is not allowed, and you will be immediately banned.</p>
+            <p>8. Respect make sure to show respect for everyone in this server. It’s very important that we all keep this community healthy and friendly for others.</p>
+            <p>9. Keep chat in English. In order for staff to watch over and make sure things are good. We need to keep the chat strictly in English. (Unless you’re in the International chat)</p>
+            <p>10. No roleplay for staff to watch over. We need to keep chats strictly “real” life.</p>
+            <p>11. No triggering topics talking about eating disorders, self-harm, and homophobia is not allowed. In order to keep this server healthy, we need to avoid triggering others.</p>
+        </div>
+    </div>
+</body>
+</html>
